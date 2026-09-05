@@ -178,6 +178,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "EF Core migration validation" },
                     }
                 },
+                  new Question
+                {
+                    Number = 14,
+                    SelectedAnswer = "A",
+                    Text = "Why is server-side validation still necessary if client-side validation exists?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Client-side validation can be bypassed" },
+                        new Choice { Letter = "B", Text = "Client-side validation automatically modifies the database" },
+                        new Choice { Letter = "C", Text = "Server-side validation only works with SQLite" },
+                        new Choice { Letter = "D", Text = "Client-side validation cannot display messages" },
+                    }
+                },
             };
         }
     }
