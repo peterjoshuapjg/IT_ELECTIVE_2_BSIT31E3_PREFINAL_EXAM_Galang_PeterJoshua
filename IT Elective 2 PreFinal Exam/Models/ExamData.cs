@@ -256,6 +256,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Create Student 999 automatically" },
                     }
                 },
+                  new Question
+                {
+                    Number = 20,
+                    SelectedAnswer = "A",
+                    Text = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Data integrity" },
+                        new Choice { Letter = "B", Text = "HTML formatting" },
+                        new Choice { Letter = "C", Text = "CSS inheritance" },
+                        new Choice { Letter = "D", Text = "Razor syntax" },
+                    }
+                },
             };
         }
     }
