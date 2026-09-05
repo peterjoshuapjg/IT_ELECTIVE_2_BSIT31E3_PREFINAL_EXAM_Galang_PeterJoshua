@@ -113,6 +113,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Database connection string" },
                     }
                 },
+                  new Question
+                {
+                    Number = 9,
+                    SelectedAnswer = "B",
+                    Text = "What is the purpose of a navigation property such as public Section Section { get; set; }?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "It stores the database password" },
+                        new Choice { Letter = "B", Text = "It represents a relationship to another entity" },
+                        new Choice { Letter = "C", Text = "It creates a new database" },
+                        new Choice { Letter = "D", Text = "It validates the student's name" },
+                    }
+                },
             };
         }
     }
