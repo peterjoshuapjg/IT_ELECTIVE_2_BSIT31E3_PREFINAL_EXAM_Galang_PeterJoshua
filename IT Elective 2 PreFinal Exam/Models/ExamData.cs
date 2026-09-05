@@ -126,6 +126,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "It validates the student's name" },
                     }
                 },
+                  new Question
+                {
+                    Number = 10,
+                    SelectedAnswer = "B",
+                    Text = "What does .Include() generally allow EF Core to do?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Delete the Section table" },
+                        new Choice { Letter = "B", Text = "Load related Section data together with Students" },
+                        new Choice { Letter = "C", Text = "Create a new Student" },
+                        new Choice { Letter = "D", Text = "Validate Student input" },
+                    }
+                },
             };
         }
     }
