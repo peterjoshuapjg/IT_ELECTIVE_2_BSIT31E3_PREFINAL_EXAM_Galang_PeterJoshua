@@ -100,6 +100,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Many-to-One only" },
                     }
                 },
+                  new Question
+                {
+                    Number = 8,
+                    SelectedAnswer = "B",
+                    Text = "In the following example, what is SectionId?\n\npublic int SectionId { get; set; }\npublic Section Section { get; set; }",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Primary key of Student" },
+                        new Choice { Letter = "B", Text = "Foreign key referencing Section" },
+                        new Choice { Letter = "C", Text = "Navigation property" },
+                        new Choice { Letter = "D", Text = "Database connection string" },
+                    }
+                },
             };
         }
     }
