@@ -87,6 +87,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Student.cs" },
                     }
                 },
+                  new Question
+                {
+                    Number = 7,
+                    SelectedAnswer = "B",
+                    Text = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "One-to-One" },
+                        new Choice { Letter = "B", Text = "One-to-Many" },
+                        new Choice { Letter = "C", Text = "Many-to-Many" },
+                        new Choice { Letter = "D", Text = "Many-to-One only" },
+                    }
+                },
             };
         }
     }
