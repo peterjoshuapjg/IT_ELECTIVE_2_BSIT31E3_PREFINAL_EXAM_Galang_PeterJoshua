@@ -21,7 +21,20 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "C", Text = "It allows data to persist after the application stops" },
                         new Choice { Letter = "D", Text = "It removes the need for MVC" },
                     }
-                }
+                },
+                 new Question
+                {
+                    Number = 2,
+                    SelectedAnswer = "B",
+                    Text = "Which approach is being used when an existing database is used to generate EF Core entity classes?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Code-First" },
+                        new Choice { Letter = "B", Text = "Database-First" },
+                        new Choice { Letter = "C", Text = "Model-First" },
+                        new Choice { Letter = "D", Text = "Controller-First" },
+                    }
+                },
             };
         }
     }
