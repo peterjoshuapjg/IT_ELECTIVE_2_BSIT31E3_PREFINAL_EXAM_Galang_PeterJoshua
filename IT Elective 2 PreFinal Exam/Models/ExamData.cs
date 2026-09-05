@@ -230,6 +230,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "To perform client-side validation" },
                     }
                 },
+                  new Question
+                {
+                    Number = 18,
+                    SelectedAnswer = "B",
+                    Text = "Which middleware is commonly used in ASP.NET Core for centralized exception handling?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "UseDatabase()" },
+                        new Choice { Letter = "B", Text = "UseExceptionHandler()" },
+                        new Choice { Letter = "C", Text = "UseValidationHandler()" },
+                        new Choice { Letter = "D", Text = "UseMvcDatabase()" },
+                    }
+                },
             };
         }
     }
