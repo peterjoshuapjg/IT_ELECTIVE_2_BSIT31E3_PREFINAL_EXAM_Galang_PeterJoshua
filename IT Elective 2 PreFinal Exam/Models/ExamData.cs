@@ -152,6 +152,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "To prevent controllers from using LINQ" },
                     }
                 },
+                  new Question
+                {
+                    Number = 12,
+                    SelectedAnswer = "A",
+                    Text = "Consider this query:\n\nvar students = _context.Students.Include(s => s.Section).ToList();\n\nWhat is the main benefit of Include(s => s.Section)?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "It loads the related Section navigation property" },
+                        new Choice { Letter = "B", Text = "It creates a Section object manually" },
+                        new Choice { Letter = "C", Text = "It removes the foreign key" },
+                        new Choice { Letter = "D", Text = "It prevents the query from accessing the database" },
+                    }
+                },
             };
         }
     }
