@@ -139,6 +139,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Validate Student input" },
                     }
                 },
+                  new Question
+                {
+                    Number = 11,
+                    SelectedAnswer = "B",
+                    Text = "Why might a ViewModel be used when displaying Student and Section information?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "To replace the database" },
+                        new Choice { Letter = "B", Text = "To combine or shape the data specifically needed by the view" },
+                        new Choice { Letter = "C", Text = "To automatically create database tables" },
+                        new Choice { Letter = "D", Text = "To prevent controllers from using LINQ" },
+                    }
+                },
             };
         }
     }
