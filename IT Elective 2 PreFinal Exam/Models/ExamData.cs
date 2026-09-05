@@ -217,6 +217,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "It automatically creates a ViewModel" },
                     }
                 },
+                  new Question
+                {
+                    Number = 17,
+                    SelectedAnswer = "B",
+                    Text = "What is the purpose of a try...catch block in a controller?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "To create navigation properties" },
+                        new Choice { Letter = "B", Text = "To catch and handle exceptions that may occur during execution" },
+                        new Choice { Letter = "C", Text = "To generate database tables" },
+                        new Choice { Letter = "D", Text = "To perform client-side validation" },
+                    }
+                },
             };
         }
     }
