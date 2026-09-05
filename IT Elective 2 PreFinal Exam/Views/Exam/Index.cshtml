@@ -1,0 +1,57 @@
+@using System.Text.Encodings.Web
+@using System.Text.Json
+@model ExamViewModel
+@{
+    ViewData["Title"] = Model.ExamTitle;
+
+    var jsonOptions = new JsonSerializerOptions
+    {
+        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+    };
+    var questionsJson = JsonSerializer.Serialize(Model.Questions, jsonOptions);
+}
+
+<script type="application/json" id="questions-data">@Html.Raw(questionsJson)</script>
+
+<div class="exam-shell" id="exam-shell">
+
+    <!--  HEADER  -->
+    <header class="exam-header">
+        <div class="exam-header__title">
+            <h1>@Model.ExamTitle</h1>
+            <p class="exam-header__subtitle">IT Elective 2 &mdash; Web System and Technologies</p>
+        </div>
+        <div class="exam-counter" id="exam-counter">Question 1 of @Model.TotalQuestions</div>
+    </header>
+
+    <!--  PROGRESS BAR  -->
+    <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!--  MAIN LAYOUT  -->
+    <main class="exam-main">
+
+        <!--  Question navigator (sidebar)  -->
+        <aside class="navigator" id="navigator" aria-label="Question navigator">
+            <h2 class="navigator__title">Questions</h2>
+            <div class="navigator__grid" id="navigator-grid"></div>
+        </aside>
+
+        <!--  Flashcard area  -->
+        <section class="card-area">
+            <div class="question-card" id="question-card">
+                <div class="question-card__number" id="question-number">Q1</div>
+                <p class="question-card__text" id="question-text"></p>
+
+                <div class="choices" id="choices-container"></div>
+            </div>
+
+            <div class="nav-buttons">
+                <button type="button" class="btn btn--ghost" id="btn-prev">&larr; Previous</button>
+                <button type="button" class="btn btn--primary" id="btn-next">Next &rarr;</button>
+            </div>
+        </section>
+    </main>
+</div>
