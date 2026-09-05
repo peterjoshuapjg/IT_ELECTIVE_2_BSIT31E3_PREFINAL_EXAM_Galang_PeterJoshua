@@ -204,6 +204,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Student Number should contain only spaces" },
                     }
                 },
+                  new Question
+                {
+                    Number = 16,
+                    SelectedAnswer = "A",
+                    Text = "Which is the best reason for having a database-level unique constraint on StudentNumber?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "It protects data integrity even if application-level validation is bypassed" },
+                        new Choice { Letter = "B", Text = "It makes Razor Views render faster" },
+                        new Choice { Letter = "C", Text = "It removes the need for a Controller" },
+                        new Choice { Letter = "D", Text = "It automatically creates a ViewModel" },
+                    }
+                },
             };
         }
     }
