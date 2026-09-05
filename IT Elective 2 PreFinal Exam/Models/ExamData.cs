@@ -165,6 +165,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "It prevents the query from accessing the database" },
                     }
                 },
+                  new Question
+                {
+                    Number = 13,
+                    SelectedAnswer = "B",
+                    Text = "Which type of validation occurs in the browser before a request is sent to the server?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Database-level validation" },
+                        new Choice { Letter = "B", Text = "Client-side validation" },
+                        new Choice { Letter = "C", Text = "Server-side validation" },
+                        new Choice { Letter = "D", Text = "EF Core migration validation" },
+                    }
+                },
             };
         }
     }
