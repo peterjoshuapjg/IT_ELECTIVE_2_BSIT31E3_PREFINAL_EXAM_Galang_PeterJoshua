@@ -35,6 +35,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Controller-First" },
                     }
                 },
+                  new Question
+                {
+                    Number = 3,
+                    SelectedAnswer = "C",
+                    Text = "What is the primary purpose of Entity Framework Core?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "To create HTML pages automatically" },
+                        new Choice { Letter = "B", Text = "To replace the MVC Controller" },
+                        new Choice { Letter = "C", Text = "To map objects in code to relational database data" },
+                        new Choice { Letter = "D", Text = "To replace the C# compiler" },
+                    }
+                },
             };
         }
     }
