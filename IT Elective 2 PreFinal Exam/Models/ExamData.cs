@@ -74,6 +74,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Starts the MVC application" },
                     }
                 },
+                  new Question
+                {
+                    Number = 6,
+                    SelectedAnswer = "B",
+                    Text = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Program.cs only" },
+                        new Choice { Letter = "B", Text = "appsettings.json" },
+                        new Choice { Letter = "C", Text = "Index.cshtml" },
+                        new Choice { Letter = "D", Text = "Student.cs" },
+                    }
+                },
             };
         }
     }
