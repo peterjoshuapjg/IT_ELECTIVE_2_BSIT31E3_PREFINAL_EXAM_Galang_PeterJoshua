@@ -191,6 +191,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "Client-side validation cannot display messages" },
                     }
                 },
+                  new Question
+                {
+                    Number = 15,
+                    SelectedAnswer = "B",
+                    Text = "A school requires every student to have a unique Student Number. Which rule best represents this requirement?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "Student Number should always be nullable" },
+                        new Choice { Letter = "B", Text = "Student Number should be unique" },
+                        new Choice { Letter = "C", Text = "Student Number should always be the same" },
+                        new Choice { Letter = "D", Text = "Student Number should contain only spaces" },
+                    }
+                },
             };
         }
     }
