@@ -48,6 +48,19 @@ namespace IT_Elective_2_PreFinal_Exam.Models
                         new Choice { Letter = "D", Text = "To replace the C# compiler" },
                     }
                 },
+                  new Question
+                {
+                    Number = 4,
+                    SelectedAnswer = "A",
+                    Text = "Which EF Core component is primarily responsible for communicating with the database?",
+                    Choices = new()
+                    {
+                        new Choice { Letter = "A", Text = "DbContext" },
+                        new Choice { Letter = "B", Text = "DbSetView" },
+                        new Choice { Letter = "C", Text = "ControllerContext" },
+                        new Choice { Letter = "D", Text = "RazorContext" },
+                    }
+                },
             };
         }
     }
